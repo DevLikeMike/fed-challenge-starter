@@ -1,7 +1,7 @@
 {
   "name": "fed-challenge-starter",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://devlikemike.github.io/fed-challenge-starter/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
