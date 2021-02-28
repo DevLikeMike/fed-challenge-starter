@@ -1,13 +1,140 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.card-container {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  flex-basis: 17.5rem;
+  margin: calc(1.375rem / 2);
+  height: 17.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 1px #a0a0a0;
+  line-height: 1rem;
+  letter-spacing: 0.04rem;
+}
+
+.card .img-container {
+  height: 60%;
+  width: 100%;
+  padding: 0;
+  border-radius: 5px;
+  object-fit: cover;
+  position: relative;
+}
+
+.img-container img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.img-container .additional-workouts {
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  width: 7rem;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.487);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional-workouts .workout-number {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.additional-workouts .middle {
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.additional-workouts .bars {
+  font-size: 10px;
+  margin-bottom: 1rem;
+}
+
+.card .img-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  padding: 1rem;
+  position: relative;
+}
+
+.card-container h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.card .content-left {
+  width: 80%;
+  padding-right: 1rem;
+}
+
+.card .card-content {
+  font-size: 10px;
+}
+
+.card .additional-content {
+  margin-bottom: 0.5rem;
+}
+
+.card .additional-content p,
+.card .additional-content i {
+  margin-right: 0.25rem;
+  display: inline;
+}
+
+.card .time,
+.card .views {
+  font-weight: 600;
+}
+
+.card .card-content .content-left .view-details {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0ea4da;
+  font-weight: 700;
+}
+
+.content-right img {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.active {
+  box-shadow: 0 1px 10px 1px #a0a0a0;
 }
